@@ -1,21 +1,16 @@
-#include <stdio.h>
+let n1, n2, n3;
+let p1, p2, p3;
+let media;
 
-int main() {
-    float n1, n2, n3, p1, p2, p3, media;
+n1 = parseFloat(prompt("Digite a nota 1: "));
+p1 = parseFloat(prompt("Digite o peso da nota 1: "));
 
-    printf("Digite a nota 1 e seu peso: ");
-    scanf("%f %f", &n1, &p1);
-    
-    printf("Digite a nota 2 e seu peso: ");
-    scanf("%f %f", &n2, &p2);
-    
-    printf("Digite a nota 3 e seu peso: ");
-    scanf("%f %f", &n3, &p3);
+n2 = parseFloat(prompt("Digite a nota 2: "));
+p2 = parseFloat(prompt("Digite o peso da nota 2: "));
 
+n3 = parseFloat(prompt("Digite a nota 3: "));
+p3 = parseFloat(prompt("Digite o peso da nota 3: "));
 
-    media = (n1 * p1 + n2 * p2 + n3 * p3) / (p1 + p2 + p3);
+media = (n1 * p1 + n2 * p2 + n3 * p3) / (p1 + p2 + p3);
 
-    printf("A media ponderada final e: %.2f\n", media);
-    
-    return 0;
-}
+console.log("A media ponderada final e: " + media.toFixed(2));
