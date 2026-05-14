@@ -1,42 +1,39 @@
-#include <stdio.h>
+let operacao;
+let n1, n2, resultado;
 
-int main() {
-    char operacao;
-    double n1, n2, resultado;
+console.log("--- CALCULADORA ---");
 
-    printf("--- CALCULADORA ---\n");
-    printf("Escolha a operacao (+, -, *, /): ");
-    scanf(" %c", &operacao); 
-    
-    printf("Digite o primeiro numero: ");
-    scanf("%lf", &n1);
-    printf("Digite o segundo numero: ");
-    scanf("%lf", &n2);
+operacao = prompt("Escolha a operacao (+, -, *, /): ");
 
-    switch (operacao) {
-        case '+':
-            resultado = n1 + n2;
-            printf("%.2lf + %.2lf = %.2lf\n", n1, n2, resultado);
-            break;
-        case '-':
-            resultado = n1 - n2;
-            printf("%.2lf - %.2lf = %.2lf\n", n1, n2, resultado);
-            break;
-        case '*':
-            resultado = n1 * n2;
-            printf("%.2lf * %.2lf = %.2lf\n", n1, n2, resultado);
-            break;
-        case '/':
-            if (n2 != 0) {
-                resultado = n1 / n2;
-                printf("%.2lf / %.2lf = %.2lf\n", n1, n2, resultado);
-            } else {
-                printf("Erro Divisao por zero nao e permitida.\n");
-            }
-            break;
-        default:
-            printf("Operacao invalida\n");
-    }
+n1 = parseFloat(prompt("Digite o primeiro numero: "));
+n2 = parseFloat(prompt("Digite o segundo numero: "));
 
-    return 0;
+switch (operacao) {
+
+    case "+":
+        resultado = n1 + n2;
+        console.log(n1.toFixed(2) + " + " + n2.toFixed(2) + " = " + resultado.toFixed(2));
+        break;
+
+    case "-":
+        resultado = n1 - n2;
+        console.log(n1.toFixed(2) + " - " + n2.toFixed(2) + " = " + resultado.toFixed(2));
+        break;
+
+    case "*":
+        resultado = n1 * n2;
+        console.log(n1.toFixed(2) + " * " + n2.toFixed(2) + " = " + resultado.toFixed(2));
+        break;
+
+    case "/":
+        if (n2 != 0) {
+            resultado = n1 / n2;
+            console.log(n1.toFixed(2) + " / " + n2.toFixed(2) + " = " + resultado.toFixed(2));
+        } else {
+            console.log("Erro: Divisao por zero nao e permitida.");
+        }
+        break;
+
+    default:
+        console.log("Operacao invalida");
 }
