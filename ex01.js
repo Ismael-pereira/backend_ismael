@@ -1,24 +1,15 @@
-/# 5-Exerc-cios-Back-end-
-____________________________________________________________________________________________________________________________________
-#include <stdio.h>
+console.log("==========================================");
+console.log("         APRESENTAÇÃO PESSOAL            ");
+console.log("==========================================\n");
 
-int main() {
-    
-    printf("==========================================\n");
-     printf("         APRESENTAÇÃO PESSOAL            \n");
-      printf("==========================================\n\n");
-      
-      printf("Aoba, meu nome e Ismael.\n");
-      printf ("Estou apredendo programação |C| no colegio CEEP\n");
-      printf ("Eu Teno 15 anos, tenho um grande objetivo em ganhar na vida\n");
-      printf ("Eu moro na cidade de Santa Teresa do Oeste \n\n");
- 
- printf("Hobbies: \n");
-    printf("-> Assistir series e filmes \n");
-    printf("-> Jogar videogames\n");
-    printf("-> Fazer esportes de Luta\n\n");
- 
-     printf("==========================================\n");
- 
-      return 0;
-}
+console.log("Aoba, meu nome e Ismael.");
+console.log("Estou aprendendo programação JavaScript no colegio CEEP");
+console.log("Eu tenho 15 anos, tenho um grande objetivo em ganhar na vida");
+console.log("Eu moro na cidade de Santa Teresa do Oeste\n");
+
+console.log("Hobbies:");
+console.log("-> Assistir series e filmes");
+console.log("-> Jogar videogames");
+console.log("-> Fazer esportes de luta\n");
+
+console.log("==========================================");
